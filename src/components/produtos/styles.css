@@ -1,0 +1,83 @@
+.card-container {
+  display: flex;
+  margin: 7% auto;
+  width: 88%;
+  justify-content: space-between;
+}
+.plantas-container {
+  width: 25%;
+}
+
+.plantas-container h1 {
+  font-size: 4.2em;
+}
+.plantas-container p {
+  font-size: 1.9em;
+  margin-bottom: 50px;
+}
+
+
+/* button */
+
+
+.button-see svg {
+  background-color: #c1dcdc;
+  position: relative;
+  top: 5px;
+  left: 8px;
+}
+
+
+.button-see a:hover svg {
+  transform: translateX(4px);
+  transition: transform 0.3s ease;
+  color: white;
+}
+.button-see a:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  color: white;
+}
+.button-see a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.9em;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #c1dcdc;
+  cursor: pointer;
+}
+/* button */
+
+.card-produtos {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.card-produtos img {
+  width: 100%;
+}
+.card-produtos h3 {
+  font-size: 1.6em;
+}
+
+.card-produtos p {
+  font-size: 1.5em;
+  color: #818181;
+}
+
+.card-plantas a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.card-plantas:hover h3 {
+  transform: translateX(50px);
+  transition: transform 0.5s ease;
+}
+.card-plantas:hover p {
+  transform: translateX(80px);
+  transition: transform 0.9s ease;
+}

@@ -1,0 +1,49 @@
+.navbar-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 55px 0px;
+  margin: 0 auto;
+}
+.container-links img {
+  width: 60%;
+  object-fit: cover;
+}
+.container-links {
+  display: flex;
+  gap: 40px;
+  width: 45%;
+}
+.container-links ul {
+  display: flex;
+  gap: 30px;
+  font-size: 1.9em;
+  align-items: center;
+}
+.container-links a {
+  text-decoration: none;
+  color: black;
+}
+.container-links a:hover {
+  color: #c1dcdc;
+}
+
+.container-buttons {
+  display: flex;
+  gap: 50px;
+  width: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#cart {
+  width: 40px;
+  cursor: pointer;
+}
+#user {
+  width: 35px;
+  cursor: pointer;
+}
+
+.container-buttons button {
+  border: none;
+}
