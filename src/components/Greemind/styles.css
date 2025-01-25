@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
 .cards {
   display: flex;
@@ -25,6 +26,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.315);
   transition: transform 0.3s ease;
   margin: 100px 25px 25%;
+  overflow: hidden;
 }
 .card img {
   background-color: #c1dcdc;

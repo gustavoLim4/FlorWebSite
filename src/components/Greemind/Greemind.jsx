@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 
-import pessoa1 from "../img/pessoa3.png";
-import pessoa2 from "../img/pessoa1.png";
-import pessoa3 from "../img/pessoa3.png";
-import pessoa4 from "../img/pessoa1.png";
+import pessoa1 from "../../img/pessoa3.png";
+import pessoa2 from "../../img/pessoa1.png";
+import pessoa3 from "../../img/pessoa3.png";
+import pessoa4 from "../../img/pessoa1.png";
 
 import { IoStar } from "react-icons/io5";
 

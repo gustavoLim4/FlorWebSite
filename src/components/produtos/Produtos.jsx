@@ -18,6 +18,8 @@ const Produtos = ({ name, preco, imagem }) => {
           </a>
         </div>
       </div>
+
+
       <div className="card-produtos">
         <CardsProdutos
           imagem={planta1}
@@ -35,6 +37,7 @@ const Produtos = ({ name, preco, imagem }) => {
           preco="P 3,500.00"
         />
       </div>
+      
     </main>
   );
 };

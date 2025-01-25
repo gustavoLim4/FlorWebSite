@@ -1,0 +1,38 @@
+/* Modal.css */
+
+/* Estilos do Modal */
+.modal-user {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Inicialmente fora da tela à direita */
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.5s ease; /* Transição suave */
+    z-index: 1000;
+    padding: 35px 20px;
+  }
+  
+  /* Quando o modal estiver visível */
+  .modal-user.show {
+    right: 0; /* Modal se move para a posição 0, aparecendo à direita */
+  }
+  
+  /* Fundo da tela */
+  .modal-abrir {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Inicialmente não visível */
+
+  }
+  
+  /* Quando o modal estiver visível, o fundo aparece */
+  .modal-abrir.show {
+    display: block;
+  }

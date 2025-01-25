@@ -12,6 +12,8 @@ body {
   line-height: 1;
   position: relative;
   overflow-x: hidden;
+  max-width: 1920px;
+  width: 100%; 
 }
 
 ::-webkit-scrollbar {

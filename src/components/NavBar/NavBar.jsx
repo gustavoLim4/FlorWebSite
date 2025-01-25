@@ -1,10 +1,37 @@
-import React from "react";
-import "./styles.css"
+// src/components/NavBar.js
+import React, { useState } from "react";
+import "./styles.css";
 import imgLogo from "../../img/GREENMIND.png";
 import Cart from "../../img/Cart.png";
 import User from "../../img/User.png";
+import ModalCart from "../Cart/ModalCart"
+import UserModal from "../UserCadas/inputs/UserModal";
 
 const NavBar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const [ModalAbrir, setModalAbrir] = useState(false); 
+
+
+  const AbrirModal = () => {
+    setModalAbrir(true);
+  };
+
+  const FecharModal = () => {
+    setModalAbrir(false);
+  };
+
+
+
   return (
     <main className="navbar-container">
       <div className="container-links">
@@ -16,13 +43,15 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="container-buttons">
-        <button>
-          <img src={Cart}  id="cart"  alt="carinho de compras" />
+        <button onClick={openModal}>
+          <img src={Cart} id="cart" alt="carrinho de compras" />
         </button>
-        <button>
-          <img src={User} id="user" alt="carinho de compras" />
+        <button onClick={AbrirModal}>
+          <img src={User} id="user" alt="usuário" />
         </button>
       </div>
+      <ModalCart isOpen={isModalOpen} onClose={closeModal} />
+      <UserModal abrir={ModalAbrir} fechar={FecharModal}/>
     </main>
   );
 };
