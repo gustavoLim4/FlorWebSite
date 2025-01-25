@@ -32,10 +32,11 @@
 .pesquisar img {
   background-color: #c1dcdc;
 }
-input:focus {
-    border: 3px outset #fff;
-    outline: none;
-    transition: 100ms;
+
+.container-input input:focus {
+  border: 3px outset #fff;
+  outline: none;
+  transition: 100ms;
 }
 
 .container-input input::placeholder {

@@ -4,28 +4,27 @@ import "./styles.css";
 import pesquisar from "../../img/pesquisa.png";
 
 const BannerInT = () => {
-    
-  const FucosRef = useRef(null)
+  const FucosRef = useRef(null);
 
   const handleFocus = () => {
     if (FucosRef.current) {
       FucosRef.current.focus();
     }
-  }
+  };
 
   return (
-    <div className="container-input">
+    <main className="container-input">
       <input
         type="text"
-        id="input-ctx"
         placeholder="What are you looking for?"
         ref={FucosRef}
         required
+        id="product"
       />
-      <button className="pesquisar"  onClick={handleFocus}>
+      <button className="pesquisar" onClick={handleFocus}>
         <img src={pesquisar} alt="pesquisar" />
       </button>
-    </div>
+    </main>
   );
 };
 

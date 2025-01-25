@@ -33,13 +33,13 @@ const NavBar = () => {
 
 
   return (
-    <main className="navbar-container">
+    <main className="navbar-container" id="home">
       <div className="container-links">
         <img src={imgLogo} alt="imagem logo" />
         <ul>
           <a href="#home">Home</a>
           <a href="#product">Products</a>
-          <a href="#contact">Contacts</a>
+          <a href="#aboutus">About us</a>
         </ul>
       </div>
       <div className="container-buttons">
