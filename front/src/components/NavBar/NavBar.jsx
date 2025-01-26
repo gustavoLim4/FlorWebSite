@@ -4,12 +4,12 @@ import "./styles.css";
 import imgLogo from "../../img/GREENMIND.png";
 import Cart from "../../img/Cart.png";
 import User from "../../img/User.png";
-import ModalCart from "../Cart/ModalCart"
-import UserModal from "../UserCadas/inputs/UserModal";
+import ModalCart from "../Cart/ModalCart";
+import UserModal from "../Users/inputs/UserModal";
+import CadastroModal from "../Users/inputs/CadastratModal";
 
 const NavBar = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); 
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -19,18 +19,34 @@ const NavBar = () => {
     setIsModalOpen(false);
   };
 
-  const [ModalAbrir, setModalAbrir] = useState(false); 
 
 
-  const AbrirModal = () => {
-    setModalAbrir(true);
+
+
+
+
+  const [AbrirCadastrado, FecharModalCadastrado] = useState(false);
+
+  const AbrirModal1 = () => {
+    FecharModalCadastrado(true);
   };
 
   const FecharModal = () => {
-    setModalAbrir(false);
+    FecharModalCadastrado(false);
   };
 
 
+
+
+  const [AbrirCadastrar, FecharModalCadastrar] = useState(false);
+
+  const AbrirModal2 = () => {
+    FecharModalCadastrar(true);
+  };
+
+  const FecharModal2 = () => {
+    FecharModalCadastrar(false);
+  };
 
   return (
     <main className="navbar-container" id="home">
@@ -46,12 +62,14 @@ const NavBar = () => {
         <button onClick={openModal}>
           <img src={Cart} id="cart" alt="carrinho de compras" />
         </button>
-        <button onClick={AbrirModal}>
-          <img src={User} id="user" alt="usuário" />
-        </button>
+        <div>
+          <button onClick={AbrirModal1}>entrar</button>
+          <button onClick={AbrirModal2}>Cadastrar</button>
+        </div>
       </div>
       <ModalCart isOpen={isModalOpen} onClose={closeModal} />
-      <UserModal abrir={ModalAbrir} fechar={FecharModal}/>
+      <UserModal abrirCadastrado={AbrirCadastrado} fecharCadastrado={FecharModal} />
+      <CadastroModal abrirCadastrar={AbrirCadastrar} fecharCadastrar={FecharModal2}/>
     </main>
   );
 };
