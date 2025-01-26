@@ -61,8 +61,8 @@ const NavBar = () => {
         <button onClick={openModal}>
           <img src={Cart} id="cart" alt="carrinho de compras" />
         </button>
-        <div>
-          <button onClick={AbrirModal1}>entrar</button>
+        <div className="login">
+          <button onClick={AbrirModal1}>Entrar </button>
           <button onClick={AbrirModal2}>Cadastrar</button>
         </div>
       </div>

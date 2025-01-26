@@ -6,20 +6,20 @@
   margin: 0 auto;
 }
 .container-links img {
-  width: 60%;
+  width: 35%;
   object-fit: cover;
 }
 .container-links {
   display: flex;
   gap: 40px;
-  width: 45%;
+  width: 63%;
 }
 .container-links ul {
   display: flex;
   gap: 30px;
   font-size: 1.9em;
   align-items: center;
-  width: 90%;
+  width: 81%;
 }
 .container-links a {
   text-decoration: none;
@@ -31,13 +31,13 @@
 
 .container-buttons {
   display: flex;
-  gap: 50px;
-  width: 10%;
-  justify-content: space-evenly;
+  gap: 20px;
+  width: 14%;
+  justify-content: space-between;
   align-items: center;
 }
 #cart {
-  width: 40px;
+  width: 50px;
   cursor: pointer;
 }
 #user {
@@ -47,4 +47,17 @@
 
 .container-buttons button {
   border: none;
+}
+.login {
+  display: flex;
+  gap: 20px;
+}
+.login button{
+  padding: 10px;
+  background-color: #c1dcdc;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
 }
