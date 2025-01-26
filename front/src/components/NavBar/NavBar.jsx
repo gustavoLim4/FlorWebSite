@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./styles.css";
 import imgLogo from "../../img/GREENMIND.png";
 import Cart from "../../img/Cart.png";
-import User from "../../img/User.png";
 import ModalCart from "../Cart/ModalCart";
 import UserModal from "../Users/inputs/UserModal";
 import CadastroModal from "../Users/inputs/CadastratModal";
