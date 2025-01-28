@@ -16,8 +16,8 @@ const UserModal = ({ abrirCadastrado, fecharCadastrado }) => {
       setEmail("");
       setSenha("");
     } catch (error) {
-      console.error("Erro ao fazer login", error);
-      alert("Erro ao fazer login. Tente novamente.");
+      console.error("E-mail ou senha incorreto !", error);
+      alert("E-mail ou senha incorreto !");
     }
   };
 

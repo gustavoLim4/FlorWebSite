@@ -37,7 +37,7 @@ export const cadastrarUsuario = (req, res) => {
 
 // Função para fazer login
 export const loginUsuario = (req, res) => {
-    const { email, senha } = req.body;
+    const {nome, email, senha } = req.body;
 
     const query = 'SELECT * FROM usuarios WHERE email = ?';
     db.query(query, [email], (err, result) => {
@@ -60,7 +60,7 @@ export const loginUsuario = (req, res) => {
         }
 
         // Se tudo estiver correto, retorna uma mensagem de sucesso
-        res.status(200).send({ message: 'Login bem-sucedido! Bem-vindo(a) de volta!' });
+        res.status(200).send({ message: `Bem-vindo ${nome}`  });
     });
 };
 

@@ -48,10 +48,10 @@ const NavBar = () => {
   };
 
   return (
-    <main className="navbar-container" id="home">
+    <main className="navbar-container " id="home">
       <div className="container-links">
         <img src={imgLogo} alt="imagem logo" />
-        <ul>
+        <ul className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
           <a href="#home">Home</a>
           <a href="#product">Products</a>
           <a href="#aboutus">About us</a>
